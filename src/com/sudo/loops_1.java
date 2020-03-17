@@ -3,7 +3,7 @@ package com.sudo;
 import java.util.Scanner;
 
 public class loops_1 {
-    public static void main(){
+    public static void main(String args[]){
         Scanner scanner=new Scanner(System.in);
 
         int x=scanner.nextInt();

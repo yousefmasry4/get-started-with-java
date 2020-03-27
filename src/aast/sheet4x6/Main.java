@@ -1,4 +1,4 @@
-package AAST.sheet4x6;
+package aast.sheet4x6;
 
 import java.util.Scanner;
 

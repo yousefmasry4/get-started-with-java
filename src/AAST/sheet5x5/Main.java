@@ -1,13 +1,14 @@
 package AAST.sheet5x5;
-//Write a program that counts the number of words in President Abraham Lincoln’s Gettysburg
-//address from http://cs.armstrong.edu/liang/data/ Lincoln.txt.
+
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
+
+
+//Write a program that counts the number of words in President Abraham Lincoln’s Gettysburg
+//address from http://cs.armstrong.edu/liang/data/ Lincoln.txt.
+
 
 public class Main {
     public static void main(String[] args) {

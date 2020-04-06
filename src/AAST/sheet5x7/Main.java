@@ -1,7 +1,5 @@
 package AAST.sheet5x7;
 
-import javafx.collections.transformation.SortedList;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -46,7 +44,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         if(!new File("Heba.txt").exists()){
-            System.out.println("dsdasssssssssssssssssssssssssss");
+          //  System.out.println("dsdasssssssssssssssssssssssssss");
             FileWriter f=new FileWriter("Heba.txt");
             write(rand(), new FileWriter("Heba.txt"));
         }

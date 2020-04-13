@@ -25,35 +25,35 @@ public class JoFile{
         this.jFname = jFname;
     }
     public ArrayList<String> read() {
-            BufferedReader objReader = null;
-            ArrayList<String> data=new ArrayList<String>();
-            try {
-                String strCurrentLine;
+        BufferedReader objReader = null;
+        ArrayList<String> data=new ArrayList<String>();
+        try {
+            String strCurrentLine;
 
-                objReader = new BufferedReader(new FileReader(jFname));
+            objReader = new BufferedReader(new FileReader(jFname));
 
-                while ((strCurrentLine = objReader.readLine()) != null) {
+            while ((strCurrentLine = objReader.readLine()) != null) {
 
                 //    System.out.println(strCurrentLine);
-                    data.add(strCurrentLine);
-                }
-
-            } catch (IOException e) {
-
-                e.printStackTrace();
-
-            } finally {
-
-                try {
-                    if (objReader != null)
-                        objReader.close();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+                data.add(strCurrentLine);
             }
-            return data;
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        } finally {
+
+            try {
+                if (objReader != null)
+                    objReader.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return data;
     }
-    public void write(String s){
+    public void write(String s, boolean newline){
         ArrayList<String> ss=new ArrayList<String>();
         ss.add(s);
         this.write(ss,false);
